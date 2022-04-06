@@ -4,12 +4,12 @@ Trivvie
 Web Layanan Pemberdayaan Wisata dan penginapan lokal, dengan website ini user dari penduduk lokal maupun wisatawan saling mendapatkan keuntungan.
 Dalam website ini destinasi wisata sudah dipaketkan dengan penginapan yang direkomendasikan.
 
-Requirements 
+# Requirements 
 
--PHP
--Laravel
+- PHP
+- Laravel
 
-Contributor
+# Contributor
 1. Ahmad Kasyfillah Baqi (1202190258) ahmadkasyfillahbaqi
 2. Farouq Zulfikar Fahlevi - 1202190055 - FaReVy
 3. Muhammad Iqbal Fadillah - 1202190184 - Ifdllh
