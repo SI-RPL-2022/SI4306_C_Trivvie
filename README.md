@@ -6,8 +6,8 @@ Dalam website ini destinasi wisata sudah dipaketkan dengan penginapan yang direk
 
 Requirements 
 
-PHP
-Laravel
+-PHP
+-Laravel
 
 Contributor
 1. Ahmad Kasyfillah Baqi (1202190258) ahmadkasyfillahbaqi
