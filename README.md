@@ -4,6 +4,9 @@ Trivvie
 Web Layanan Pemberdayaan Wisata dan penginapan lokal, dengan website ini user dari penduduk lokal maupun wisatawan saling mendapatkan keuntungan.
 Dalam website ini destinasi wisata sudah dipaketkan dengan penginapan yang direkomendasikan.
 
+# Version
+version 1.1.1
+
 # Requirements 
 
 - PHP
