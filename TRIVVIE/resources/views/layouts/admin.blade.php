@@ -11,7 +11,7 @@
 
     <title>Trivvie | Dashboard</title>
 
-    @include('includes.style')
+    @include('includes.admin.style')
 
 </head>
 
@@ -20,19 +20,19 @@
     <!-- Page Wrapper -->
     <div id="wrapper">
 
-    @include('includes.sidebar')
+        @include('includes.admin.sidebar')
 
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
 
             <!-- Main Content -->
             <div id="content">
-            @include('includes.navbar')
+                @include('includes.admin.navbar')
                 @yield('content')
             </div>
             <!-- End of Main Content -->
 
-            @include('includes.footer')
+            @include('includes.admin.footer')
         </div>
         <!-- End of Content Wrapper -->
 
@@ -55,7 +55,8 @@
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
-                <div class="modal-body">Pilih "Logout" di bawah ini jika Anda ingin untuk mengakhiri sesi saat ini.</div>
+                <div class="modal-body">Pilih "Logout" di bawah ini jika Anda ingin untuk mengakhiri sesi saat ini.
+                </div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
                     <a class="btn btn-primary" href="login.html">Logout</a>
@@ -64,7 +65,8 @@
         </div>
     </div>
 
-    @include('includes.script')
+    @include('includes.admin.script')
 
 </body>
+
 </html>
