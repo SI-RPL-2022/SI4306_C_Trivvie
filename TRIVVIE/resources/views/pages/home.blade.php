@@ -3,7 +3,9 @@
 @section('title')
 Trivvie
 @endsection
+
 @section('content')
+
 <header class="text-center">
     <h1>
         Explore The Beautiful World
@@ -200,4 +202,5 @@ Trivvie
         </div>
     </section>
 </main>
+
 @endsection
