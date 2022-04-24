@@ -68,7 +68,7 @@ Trivvie
                         <div class="travel-country">INDONESIA</div>
                         <div class="travel-location">UBUD, BALI</div>
                         <div class="travel-button mt-auto">
-                            <a href="#" class="btn btn-travel-details px-4">
+                            <a href="{{ route('detail') }}" class="btn btn-travel-details px-4">
                                 View Details
                             </a>
                         </div>
@@ -80,7 +80,7 @@ Trivvie
                         <div class="travel-country">JAPAN</div>
                         <div class="travel-location">OSAKA</div>
                         <div class="travel-button mt-auto">
-                            <a href="#" class="btn btn-travel-details px-4">
+                            <a href="{{ route('detail') }}" class="btn btn-travel-details px-4">
                                 View Details
                             </a>
                         </div>
@@ -92,7 +92,7 @@ Trivvie
                         <div class="travel-country">INDONESIA</div>
                         <div class="travel-location">MANDALIKA</div>
                         <div class="travel-button mt-auto">
-                            <a href="#" class="btn btn-travel-details px-4">
+                            <a href="{{ route('detail') }}" class="btn btn-travel-details px-4">
                                 View Details
                             </a>
                         </div>
@@ -104,7 +104,7 @@ Trivvie
                         <div class="travel-country">EUROPE</div>
                         <div class="travel-location">FRENCH</div>
                         <div class="travel-button mt-auto">
-                            <a href="#" class="btn btn-travel-details px-4">
+                            <a href="{{ route('detail') }}" class="btn btn-travel-details px-4">
                                 View Details
                             </a>
                         </div>
