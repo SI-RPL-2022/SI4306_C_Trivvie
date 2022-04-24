@@ -55,21 +55,21 @@
                 </p>
                 <div class="features row pt-3">
                   <div class="col-md-4">
-                    <img src="frontend/images/ic_event.png" alt="" class="features-image" />
+                    <img src="{{ ('frontend/images/ic_event.png') }}" alt="" class="features-image" />
                     <div class="description">
                       <h3>Featured Ticket</h3>
                       <p>Nijo Castle</p>
                     </div>
                   </div>
                   <div class="col-md-4 border-left">
-                    <img src="frontend/images/ic_bahasa.png" alt="" class="features-image" />
+                    <img src="{{ ('frontend/images/ic_bahasa.png') }}" alt="" class="features-image" />
                     <div class="description">
                       <h3>Language</h3>
                       <p>Japanese</p>
                     </div>
                   </div>
                   <div class="col-md-4 border-left">
-                    <img src="frontend/images/ic_foods.png" alt="" class="features-image" />
+                    <img src="{{ ('frontend/images/ic_foods.png') }}" alt="" class="features-image" />
                     <div class="description">
                       <h3>Foods</h3>
                       <p>Local Foods</p>
@@ -83,7 +83,7 @@
             <div class="card card-details card-right">
               <h2>Members are going</h2>
               <div class="members my-2">
-                <img src="frontend/images/members.png" class="member-image" />
+                <img src="{{ ('frontend/images/members.png') }}" class="member-image" />
               </div>
               <hr />
               <h2>Trip Informations</h2>
