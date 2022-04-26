@@ -2,7 +2,7 @@
 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
     <!-- Sidebar - Brand -->
-    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{ route('dashboard') }}">
         <div class="sidebar-brand-icon rotate-n-15">
             <i class="fas fa-route"></i>
         </div>
@@ -21,7 +21,7 @@
 
     <!-- Nav Item - Pages Collapse Menu -->
     <li class="nav-item">
-        <a class="nav-link collapsed" href="#">
+        <a class="nav-link collapsed" href="{{ route('travel-package.index') }}">
             <i class="fas fa-fw fa-hotel"></i>
             <span>Paket Travel</span>
         </a>
@@ -29,7 +29,7 @@
 
     <!-- Nav Item - Utilities Collapse Menu -->
     <li class="nav-item">
-        <a class="nav-link collapsed" href="#">
+        <a class="nav-link collapsed" href="index.html">
             <i class="fas fa-fw fa-images"></i>
             <span>Galeri Travel</span>
         </a>
@@ -37,7 +37,7 @@
 
     <!-- Nav Item - Pages Collapse Menu -->
     <li class="nav-item">
-        <a class="nav-link collapsed" href="#" >
+        <a class="nav-link collapsed" href="index.html" >
             <i class="fas fa-fw fa-dollar-sign"></i>
             <span>Transaksi</span>
         </a>
