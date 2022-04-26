@@ -116,20 +116,20 @@
                 </tr>
                 <tr>
                 <th width="50%">Additional Visa</th>
-                <td width="50%" class="text-right">$ 190,00</td>
+                <td width="50%" class="text-right">Rp 190,00</td>
                 </tr>
                 <tr>
                 <th width="50%">Trip Price</th>
-                <td width="50%" class="text-right">$ 80,00 / person</td>
+                <td width="50%" class="text-right">Rp 80,00 / person</td>
                 </tr>
                 <tr>
                 <th width="50%">Sub Total</th>
-                <td width="50%" class="text-right">$ 280,00</td>
+                <td width="50%" class="text-right">Rp 280,00</td>
                 </tr>
                 <tr>
                 <th width="50%">Total (+Unique)</th>
                 <td width="50%" class="text-right text-total">
-                    <span class="text-blue">$ 279,</span><span class="text-orange">33</span>
+                    <span class="text-blue">Rp 279,</span><span class="text-orange">33</span>
                 </td>
                 </tr>
             </table>
