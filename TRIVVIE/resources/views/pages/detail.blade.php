@@ -90,7 +90,7 @@
               <table class="trip-informations">
                 <tr>
                   <th width="50%">Date of Departure</th>
-                  <td width="50%" class="text-right">22 Aug, 2019</td>
+                  <td width="50%" class="text-right">22 April, 2022</td>
                 </tr>
                 <tr>
                   <th width="50%">Duration</th>
@@ -102,7 +102,7 @@
                 </tr>
                 <tr>
                   <th width="50%">Price</th>
-                  <td width="50%" class="text-right">$80,00 / person</td>
+                  <td width="50%" class="text-right">Rp 80,00 / person</td>
                 </tr>
               </table>
             </div>
