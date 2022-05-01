@@ -20,12 +20,12 @@
     </li>
 
     <!-- Nav Item - Pages Collapse Menu -->
-    <li class="nav-item">
+    {{-- <li class="nav-item">
         <a class="nav-link collapsed" href="{{ route('travel-package.index') }}">
             <i class="fas fa-fw fa-hotel"></i>
             <span>Paket Travel</span>
         </a>
-    </li>
+    </li> --}}
 
     <!-- Nav Item - Utilities Collapse Menu -->
     <li class="nav-item">
@@ -37,7 +37,7 @@
 
     <!-- Nav Item - Pages Collapse Menu -->
     <li class="nav-item">
-        <a class="nav-link collapsed" href="index.html" >
+        <a class="nav-link collapsed" href="index.html">
             <i class="fas fa-fw fa-dollar-sign"></i>
             <span>Transaksi</span>
         </a>
