@@ -14,8 +14,7 @@ class AddUsernameFieldToUsersTable extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->string('roles')->default('USER');
-            // USER, ADMIN
+            $table->string('username');
         });
     }
 
@@ -27,8 +26,7 @@ class AddUsernameFieldToUsersTable extends Migration
     public function down()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->dropColumn('roles');
-            // USER, ADMIN
+            $table->dropColumn('username');
         });
     }
 }
