@@ -19,17 +19,17 @@
                 @endforeach
             </ul>
         </div>
-
+        
     @endif
 
-
+    
     <div class="card shadow">
         <div class="card-body">
             <form action="{{ route('transaction.update', $item->id) }}" method="POST">
                 @method('PUT')
                 @csrf
                 <div class="form-group">
-                    <label for="transaction_status">Status</label>
+                    <label for="transactioun_status">Status</label>
                     <select name="transaction_status" required class="form-control">
                         <option value="{{ $item->transaction_status }}">
                             Jangan Ubah ({{ $item->transaction_status }})
@@ -37,7 +37,7 @@
                         <option value="IN_CART">In Cart</option>
                         <option value="PENDING">Pending</option>
                         <option value="SUCCESS">Success</option>
-                        <option value="CANCEL">Cancel</option>
+                        <option value="CANCEL">cancel</option>
                         <option value="FAILED">Failed</option>
                     </select>
                 </div>
@@ -50,4 +50,4 @@
 
 </div>
 <!-- /.container-fluid -->
-@endsection 
+@endsection
