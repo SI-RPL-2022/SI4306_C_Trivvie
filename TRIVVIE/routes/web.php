@@ -40,6 +40,7 @@ Route::prefix('admin')
             ->name('dashboard');
 
         Route::resource('travel-package', 'TravelPackageController');
+        Route::resource('transaction', 'TransactionController');
     });
 
 Auth::routes(['verify' => true]);
