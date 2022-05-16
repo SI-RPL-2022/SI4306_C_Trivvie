@@ -52,8 +52,6 @@ class GalleryController extends Controller
             'assets/gallery', 'public'
         );
 
-
-
         Gallery::create($data);
 
         return redirect()->route('gallery.index');
@@ -81,7 +79,6 @@ class GalleryController extends Controller
         $item = Gallery::findOrFail($id);
         $travel_packages = TravelPackage::all();
 
-
         return view('pages.admin.gallery.edit',[
             'item' => $item,
             'travel_packages' => $travel_packages 
@@ -95,7 +92,7 @@ class GalleryController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    
+
     public function update(GalleryRequest $request, $id)
     {
         $data = $request->all();
@@ -123,4 +120,5 @@ class GalleryController extends Controller
 
         return redirect()->route('gallery.index');
     }
+
 }
