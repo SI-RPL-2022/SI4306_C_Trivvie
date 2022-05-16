@@ -95,6 +95,7 @@ class GalleryController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+    
     public function update(GalleryRequest $request, $id)
     {
         $data = $request->all();
