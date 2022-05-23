@@ -19,10 +19,10 @@
                 @endforeach
             </ul>
         </div>
-
+        
     @endif
 
-
+    
     <div class="card shadow">
         <div class="card-body">
             <form action="{{ route('gallery.update', $item->id) }}" method="POST" enctype="multipart/form-data">
@@ -52,4 +52,4 @@
 
 </div>
 <!-- /.container-fluid -->
-@endsection 
+@endsection
