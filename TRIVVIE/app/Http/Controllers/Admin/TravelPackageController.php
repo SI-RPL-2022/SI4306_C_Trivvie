@@ -7,7 +7,7 @@ use App\Http\Requests\Admin\TravelPackageRequest;
 use App\Models\TravelPackage as ModelsTravelPackage;
 use App\Models\TravelPackage;
 use Illuminate\Http\Request;
-use illuminate\Support\Str;
+use Illuminate\Support\Str;
 
 class TravelPackageController extends Controller
 {
@@ -16,7 +16,6 @@ class TravelPackageController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-
     public function index()
     {
         $items = TravelPackage::all();

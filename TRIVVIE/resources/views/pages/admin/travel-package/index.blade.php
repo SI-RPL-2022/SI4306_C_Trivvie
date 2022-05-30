@@ -10,9 +10,11 @@
         <a href="{{ route('travel-package.create') }}" class="btn btn-sm btn-primary shadow-sm">
             <i class="fas fa-plus fa-sm text-white-50"></i>Tambah Paket Travel
         </a>
+
     </div>
 
-    
+
+
     <div class="row">
         <div class="card-body">
             <div class="table-responsive">
@@ -64,7 +66,7 @@
     </div>
 
 
-
+    
 </div>
 <!-- /.container-fluid -->
 @endsection

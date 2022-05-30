@@ -3,10 +3,7 @@
 
     <!-- Sidebar - Brand -->
     <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{ route('dashboard') }}">
-        <div class="sidebar-brand-icon rotate-n-15">
-            <i class="fas fa-route"></i>
-        </div>
-        <div class="sidebar-brand-text mx-3">TRIVVIE<sup> Admin </sup></div>
+        <div class="sidebar-brand-text mx-3">Trivvie Admin</div>
     </a>
 
     <!-- Divider -->
@@ -18,38 +15,27 @@
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Dashboard</span></a>
     </li>
-
-    <!-- Nav Item - Pages Collapse Menu -->
-    {{-- <li class="nav-item">
-        <a class="nav-link collapsed" href="{{ route('travel-package.index') }}">
+    <li class="nav-item">
+        <a class="nav-link" href="{{ route('travel-package.index') }}">
             <i class="fas fa-fw fa-hotel"></i>
-            <span>Paket Travel</span>
-        </a>
-    </li> --}}
-
-    <!-- Nav Item - Utilities Collapse Menu -->
+            <span>Paket Travel</span></a>
+    </li>
     <li class="nav-item">
-        <a class="nav-link collapsed" href="{{ route('gallery.index') }}">
+        <a class="nav-link" href="{{ route('gallery.index') }}">
             <i class="fas fa-fw fa-images"></i>
-            <span>Galeri Travel</span>
-        </a>
+            <span>Galeri Travel</span></a>
     </li>
-
-    <!-- Nav Item - Pages Collapse Menu -->
     <li class="nav-item">
-        <a class="nav-link collapsed" href="{{ route('transaction.index') }}">
+        <a class="nav-link" href="{{ route('transaction.index') }}">
             <i class="fas fa-fw fa-dollar-sign"></i>
-            <span>Transaksi</span>
-        </a>
+            <span>Transaksi</span></a>
     </li>
 
-    <!-- Divider -->
-    <hr class="sidebar-divider d-none d-md-block">
+    <hr class="sidebar-divider">
 
     <!-- Sidebar Toggler (Sidebar) -->
     <div class="text-center d-none d-md-inline">
         <button class="rounded-circle border-0" id="sidebarToggle"></button>
     </div>
-
 </ul>
 <!-- End of Sidebar -->

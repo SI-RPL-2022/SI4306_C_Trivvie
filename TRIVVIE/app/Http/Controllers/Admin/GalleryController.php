@@ -8,7 +8,7 @@ use App\Models\Gallery as ModelsGallery;
 use App\Models\Gallery;
 use App\Models\TravelPackage;
 use Illuminate\Http\Request;
-use illuminate\Support\Str;
+use Illuminate\Support\Str;
 
 class GalleryController extends Controller
 {
