@@ -23,7 +23,7 @@
                         <div class="col mr-2">
                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                                 Paket Travel</div>
-                            <div class="h5 mb-0 font-weight-bold text-gray-800">3</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">{{ $travel_package }}</div>
                         </div>
                         <div class="col-auto">
                             <i class="fas fa-hotel fa-2x text-gray-300"></i>
@@ -41,7 +41,7 @@
                         <div class="col mr-2">
                             <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
                                 Transaksi</div>
-                            <div class="h5 mb-0 font-weight-bold text-gray-800">5</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">{{ $transaction }}</div>
                         </div>
                         <div class="col-auto">
                             <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
@@ -59,7 +59,7 @@
                         <div class="col mr-2">
                         <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Pending
                             </div>
-                            <div class="h5 mb-0 font-weight-bold text-gray-800">0</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">{{ $transaction_pending}}</div>
                         </div>
                         <div class="col-auto">
                             <i class="fas fa-spinner fa-2x text-gray-300"></i>
@@ -76,7 +76,7 @@
                         <div class="col mr-2">
                             <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
                                 Sukses</div>
-                            <div class="h5 mb-0 font-weight-bold text-gray-800">10</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">{{ $transaction_success}}</div>
                         </div>
                         <div class="col-auto">
                             <i class="fas fa-check fa-2x text-gray-300"></i>
@@ -151,13 +151,13 @@
                     </div>
                     <div class="mt-4 text-center small">
                         <span class="mr-2">
-                            <i class="fas fa-circle text-primary"></i> Sukses
+                            <i class="fas fa-circle text-primary"> {{ $transaction_success}} </i> Sukses
                         </span>
                         <span class="mr-2">
-                            <i class="fas fa-circle text-success"></i> Pending
+                            <i class="fas fa-circle text-success"> {{ $transaction_pending}} </i> Pending
                         </span>
                         <span class="mr-2">
-                            <i class="fas fa-circle text-info"></i> Gagal
+                            <i class="fas fa-circle text-info"> 0 </i> Gagal
                         </span>
                     </div>
                 </div>
@@ -179,7 +179,7 @@
                 <div class="card-body">
 
                 
-                    <h4 class="small font-weight-bold">Borobudur<span
+                    <h4 class="small font-weight-bold">Nusa Penida<span
                             class="float-right">2</span></h4>
                     <div class="progress mb-4">
                         <div class="progress-bar bg-danger" role="progressbar" style="width: 20%"

@@ -25,16 +25,26 @@
         <div class="row">
           <div class="col-lg-8 pl-lg-0">
             <div class="card card-details">
-              <h1>Kyoto</h1>
+              <h1>{{$item->title}}</h1>
               <p>
-                Japan
+                {{$item->location}}
               </p>
+              @if ($item->galleries->count())
+                
+              @endif
               <div class="gallery">
                 <div class="xzoom-container">
-                  <img class="xzoom" id="xzoom-default" src="frontend/images/header.jpg"
-                    xoriginal="frontend/images/header.jpg" />
+                  <img class="xzoom" id="xzoom-default" 
+                    src="{{ Storage::url($item ->galleries->first()->image)}}"
+                    xoriginal="{{ Storage::url($item ->galleries->first()->image)}}" />
                   <div class="xzoom-thumbs">
-                    <a href="frontend/images/ky1.jpg"><img class="xzoom-gallery" width="128"
+                      @foreach ($item->galleries as $gallery)
+                      <a href="{{Storage::url($gallery->image)}}">
+                        <img class="xzoom-gallery" width="128"
+                        src="{{ Storage::url($gallery->image) }}" 
+                        xpreview="{{Storage::url($gallery->image)}}" /></a>
+                      @endforeach    
+                    {{-- <a href="frontend/images/ky1.jpg"><img class="xzoom-gallery" width="128"
                         src="{{ url('frontend/images/ky1.jpg') }}" xpreview="frontend/images/ky1.jpg" /></a>
                     <a href="frontend/images/ky2.jpg"><img class="xzoom-gallery" width="128"
                         src="{{ url('frontend/images/ky2.jpg') }}" xpreview="frontend/images/ky2.jpg" /></a>
@@ -43,36 +53,40 @@
                     <a href="frontend/images/ky4.jpg"><img class="xzoom-gallery" width="128"
                         src="{{ url('frontend/images/ky4.jpg') }}" xpreview="frontend/images/ky4.jpg" /></a>
                     <a href="frontend/images/ky5.jpg"><img class="xzoom-gallery" width="128"
-                        src="{{ url('frontend/images/ky5.jpg') }}" xpreview="frontend/images/ky5.jpg" /></a>
-                  </div>
+                        src="{{ url('frontend/images/ky5.jpg') }}" xpreview="frontend/images/ky5.jpg" /></a> --}}
+
+                      </div>
                 </div>
                 <h2>Tentang Wisata</h2>
                 <p>
+                  {{!! $item->about !!}}
+                </p>
+                {{-- <p>
                   Kyoto is considered the cultural capital of Japan and a major tourist destination. It is home to numerous Buddhist temples, Shinto shrines, palaces and gardens, some of which are listed collectively by UNESCO as a World Heritage Site.
                 </p>
                 <p>
                   Prominent landmarks include the Kyoto Imperial Palace, Kiyomizu-dera, Kinkaku-ji, Ginkaku-ji and the Katsura Imperial Villa. Kyoto is also a center of higher learning, with Kyoto University being an institution of international renown.
-                </p>
+                </p> --}}
                 <div class="features row pt-3">
                   <div class="col-md-4">
                     <img src="{{ url('frontend/images/ic_event.png') }}" alt="" class="features-image" />
                     <div class="description">
                       <h3>Featured Ticket</h3>
-                      <p>Nijo Castle</p>
+                      <p>{{$item->featured_event}}</p>
                     </div>
                   </div>
                   <div class="col-md-4 border-left">
                     <img src="{{ url('frontend/images/ic_bahasa.png') }}" alt="" class="features-image" />
                     <div class="description">
                       <h3>Language</h3>
-                      <p>Japanese</p>
+                      <p>{{$item->language}}</p>
                     </div>
                   </div>
                   <div class="col-md-4 border-left">
                     <img src="{{ url('frontend/images/ic_foods.png') }}" alt="" class="features-image" />
                     <div class="description">
                       <h3>Foods</h3>
-                      <p>Local Foods</p>
+                      <p>{{$item->foods}}</p>
                     </div>
                   </div>
                 </div>
@@ -90,24 +104,35 @@
               <table class="trip-informations">
                 <tr>
                   <th width="50%">Date of Departure</th>
-                  <td width="50%" class="text-right">22 April, 2022</td>
+                  <td width="50%" class="text-right">{{ \Carbon\Carbon::create($item->date_of_departure)->format('F n, Y')}}</td>
                 </tr>
                 <tr>
                   <th width="50%">Duration</th>
-                  <td width="50%" class="text-right">4D 3N</td>
+                  <td width="50%" class="text-right">{{ $item->duration }}</td>
                 </tr>
                 <tr>
                   <th width="50%">Type</th>
-                  <td width="50%" class="text-right">Open Trip</td>
+                  <td width="50%" class="text-right"> {{ $item->type }} </td>
                 </tr>
                 <tr>
                   <th width="50%">Price</th>
-                  <td width="50%" class="text-right">Rp 80,00 / person</td>
+                  <td width="50%" class="text-right">Rp {{ $item->price}},00 / person</td>
                 </tr>
               </table>
             </div>
             <div class="join-container">
-              <a href="{{ route('checkout') }}" class="btn btn-block btn-join-now mt-3 py-2">Join Now</a>
+              @auth
+                <form action="{{ route('checkout_process', $item->id) }}" method="post">
+                   @csrf
+                  <button class="btn btn-block btn-join-now mt-3 py-2" type="submit">
+                    Join Now
+                  </button>
+                </form>  
+              @endauth
+              @guest
+              <a href="{{ route('login') }}" class="btn btn-block btn-join-now mt-3 py-2">Login Or Register to Join</a>
+                
+              @endguest
             </div>
           </div>
         </div>
