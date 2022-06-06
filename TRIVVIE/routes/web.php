@@ -1,5 +1,7 @@
 <?php
+
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\TravelPackageController;
 use App\Http\Controllers\HomeController;
@@ -15,41 +17,33 @@ use App\Http\Controllers\CheckoutController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
 Route::get('/', [HomeController::class, 'index'])
     ->name('home');
-<<<<<<< HEAD
 
 Route::get('/detail/{slug}', 'DetailController@index')
     ->name('detail');
 
 Route::post('/checkout/{id}', 'CheckoutController@process')
     ->name('checkout_process')
-    ->middleware(['auth','verified']);
+    ->middleware(['auth', 'verified']);
 
 Route::GET('/checkout/{id}', 'CheckoutController@index')
     ->name('checkout')
-    ->middleware(['auth','verified']);
+    ->middleware(['auth', 'verified']);
 
 Route::post('/checkout/create/{detail_id}', 'CheckoutController@create')
     ->name('checkout-create')
-    ->middleware(['auth','verified']);
+    ->middleware(['auth', 'verified']);
 
 Route::post('/checkout/remove/{detail_id}', 'CheckoutController@remove')
     ->name('checkout_remove')
-    ->middleware(['auth','verified']);
+    ->middleware(['auth', 'verified']);
 
 Route::post('/checkout/confirm/{id}', 'CheckoutController@success')
     ->name('checkout-success')
-    ->middleware(['auth','verified']);
+    ->middleware(['auth', 'verified']);
 
-=======
-Route::get('/detail', [DetailController::class, 'index'])
-    ->name('detail');
-Route::get('/checkout', [CheckoutController::class, 'index'])
-    ->name('checkout');
-Route::get('/checkout/success', [CheckoutController::class, 'success'])
-    ->name('checkout-success');
->>>>>>> 643cef248747fd4ec14f1ad3ed55d672cb29a3e1
 Route::prefix('admin')
     ->namespace('Admin')
     ->middleware(['auth', 'admin'])
