@@ -17,7 +17,7 @@ Trivvie
         <br />
         moment you never see before
     </p>
-    <a href="#popular" class="btn btn-get-started px-4 mt-4">
+    <a href="#popular" class="btn btn-primary px-4 mt-4">
         Get Started
     </a>
 </header>
@@ -77,57 +77,16 @@ Trivvie
                     </div>
                 </div>
                 @endforeach
-                {{-- <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="card-travel text-center d-flex flex-column"
-                        style="background-image: url('frontend/images/tr1.jpg');">
-                        <div class="travel-country">INDONESIA</div>
-                        <div class="travel-location">UBUD, BALI</div>
-                        <div class="travel-button mt-auto">
-                            <a href="{{ route('detail') }}" class="btn btn-travel-details px-4">
-                                View Details
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="card-travel text-center d-flex flex-column"
-                        style="background-image: url('frontend/images/tr2.jpg');">
-                        <div class="travel-country">JAPAN</div>
-                        <div class="travel-location">OSAKA</div>
-                        <div class="travel-button mt-auto">
-                            <a href="{{ route('detail') }}" class="btn btn-travel-details px-4">
-                                View Details
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="card-travel text-center d-flex flex-column"
-                        style="background-image: url('frontend/images/tr3.jpg');">
-                        <div class="travel-country">INDONESIA</div>
-                        <div class="travel-location">MANDALIKA</div>
-                        <div class="travel-button mt-auto">
-                            <a href="{{ route('detail') }}" class="btn btn-travel-details px-4">
-                                View Details
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="card-travel text-center d-flex flex-column"
-                        style="background-image: url('frontend/images/tr4.jpg');">
-                        <div class="travel-country">EUROPE</div>
-                        <div class="travel-location">FRENCH</div>
-                        <div class="travel-button mt-auto">
-                            <a href="{{ route('detail') }}" class="btn btn-travel-details px-4">
-                                View Details
-                            </a>
-                        </div>
-                    </div>
-                </div> --}}
             </div>
+            
         </div>
+        <div class="col-12 text-center">
+                    <a href="{{route('paket_travel')}}" class="btn btn-warning">
+                        <b>Show All</b>
+                    </a>
+                </div>
     </section>
+
 
     <section class="section-networks" id="networks">
         <div class="container">
