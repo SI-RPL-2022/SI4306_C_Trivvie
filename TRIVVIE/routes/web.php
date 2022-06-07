@@ -44,7 +44,7 @@ Route::post('/checkout/remove/{detail_id}', 'CheckoutController@remove')
     ->name('checkout_remove')
     ->middleware(['auth', 'verified']);
 
-Route::post('/checkout/confirm/{id}', 'CheckoutController@success')
+Route::get('/checkout/confirm/{id}', 'CheckoutController@success')
     ->name('checkout-success')
     ->middleware(['auth', 'verified']);
 
