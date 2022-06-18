@@ -11,31 +11,20 @@
         <div class="row">
           <div class="col p-0">
             <nav aria-label="breadcrumb">
-              <ol class="breadcrumb">
-              <li class="breadcrumb-item active" aria-current="page">
-                  Paket Travel
-                </li>
-              </ol>
+            <div class="col text-center section-popular-heading">
+                    <h2><br><b>Paket Travel</h2><br>
+                    <h5>
+                    Bersama Trivvie, maka perjalanan Anda akan aman serta nyaman
+                        <br />
+                    Tunggu apalagi... Booking sekarang dan nikmati perjalananmu !!!
+                    </h5>
+                </div>
             </nav>
-          </div>
-          
-
         </div>
+      </div>
+      <br><br><br><br>
     
-        <div class="row justify-content-center mb-3">
-          <div class="col-md-6">
-              <form action="/paket_travel">
-                <div class="input-group mb-5">
-                <input type="text" class="form-control" placeholder="Search.." name="search" value="{{ request('search')}}">
-                <button class="btn btn-info" type="submit" >Search</button>                
-        </div> 
-</form>
-        </div>
-        </div>
-
-        <section class="section-popular-content" id="popularContent">
-        
-        
+        <section class="section-popular-content" id="popularContent">       
         <!-- <div class="container"> -->
             <div class="section-popular-travel row justify-content-center">
 
@@ -56,6 +45,7 @@
             </div>
         </div>
     </section>
+  </section>
 </main>
 
 @endsection

@@ -80,11 +80,11 @@ Trivvie
             </div>
             
         </div>
-        <div class="col-12 text-center">
+        <!-- <div class="col-12 text-center">
                     <a href="{{route('paket_travel')}}" class="btn btn-warning">
                         <b>Show All</b>
                     </a>
-                </div>
+                </div> -->
     </section>
 
 

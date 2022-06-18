@@ -8,26 +8,13 @@
         </button>
 
         <!-- Menu -->
-        <div class="collapse navbar-collapse" id="navb">
+        <div class="collapse navbar-collapse" id="nav">
             <ul class="navbar-nav ml-auto mr-3">
-                <li class="nav-item mx-md-2">
-                    <a class="nav-link active" href="#">Home</a>
+                <li class="nav-tabs mx-md-2">
+                    <a class="nav-link" href="{{route('home')}}">Home</a>
                 </li>
-                <li class="nav-item mx-md-2">
-                    <a class="nav-link" href="#">Paket Travel</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                        Services
-                    </a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Link 1</a>
-                        <a class="dropdown-item" href="#">Link 2</a>
-                        <a class="dropdown-item" href="#">Link 3</a>
-                    </div>
-                </li>
-                <li class="nav-item mx-md-2">
-                    <a class="nav-link" href="#testimonialsContent">Testimonial</a>
+                <li class="nav-tabs mx-md-2">
+                    <a class="nav-link" href="{{route('paket_travel')}}">Paket Travel</a>
                 </li>
             </ul>
 
