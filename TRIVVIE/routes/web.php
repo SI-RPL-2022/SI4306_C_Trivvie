@@ -8,6 +8,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Paket_TravelController;
 use App\Http\Controllers\DetailController;
 use App\Http\Controllers\CheckoutController;
+use App\Http\Controllers\ProfileController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,6 +25,9 @@ Route::get('', [HomeController::class, 'index'])
 
 Route::get('/paket_travel', 'Paket_TravelController@index')
     ->name('paket_travel');
+
+Route::get('/profile', 'ProfileController@index')
+    ->name('profile');
 
 Route::get('/detail/{slug}', 'DetailController@index')
     ->name('detail');

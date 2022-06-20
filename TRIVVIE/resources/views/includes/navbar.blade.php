@@ -16,6 +16,9 @@
                 <li class="nav-tabs mx-md-2">
                     <a class="nav-link" href="{{route('paket_travel')}}">Paket Travel</a>
                 </li>
+                <li class="nav-tabs mx-md-2">
+                    <a class="nav-link" href="{{route('profile')}}">Profile</a>
+                </li>
             </ul>
 
             @guest
