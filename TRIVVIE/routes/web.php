@@ -19,7 +19,7 @@ use App\Http\Controllers\CheckoutController;
 |
 */
 
-Route::get('/home', [HomeController::class, 'index'])
+Route::get('', [HomeController::class, 'index'])
     ->name('home');
 
 Route::get('/paket_travel', 'Paket_TravelController@index')
