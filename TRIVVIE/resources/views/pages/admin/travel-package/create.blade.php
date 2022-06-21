@@ -12,13 +12,13 @@
 
 
     @if ($errors->any())
-        <div class="alert alert-danger">
-            <ul>
-                @foreach ($errors->all() as $error)
-                    <li>{{ $error }}</li>
-                @endforeach
-            </ul>
-        </div>
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+            <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
 
     @endif
 
@@ -29,11 +29,13 @@
                 @csrf
                 <div class="form-group">
                     <label for="title">Title</label>
-                    <input type="text" class="form-control" name="title" placeholder="Title" value="{{ old('title') }}">
+                    <input type="text" class="form-control" name="title" placeholder="Destination"
+                        value="{{ old('title') }}">
                 </div>
                 <div class="form-group">
                     <label for="location">Location</label>
-                    <input type="text" class="form-control" name="location" placeholder="location" value="{{ old('location') }}">
+                    <input type="text" class="form-control" name="location" placeholder="location"
+                        value="{{ old('location') }}">
                 </div>
                 <div class="form-group">
                     <label for="about">About</label>
@@ -41,11 +43,13 @@
                 </div>
                 <div class="form-group">
                     <label for="featured_event">Featured Event</label>
-                    <input type="text" class="form-control" name="featured_event" placeholder="featured_event" value="{{ old('featured_event') }}">
+                    <input type="text" class="form-control" name="featured_event" placeholder="featured_event"
+                        value="{{ old('featured_event') }}">
                 </div>
                 <div class="form-group">
                     <label for="language">Language</label>
-                    <input type="text" class="form-control" name="language" placeholder="language" value="{{ old('language') }}">
+                    <input type="text" class="form-control" name="language" placeholder="language"
+                        value="{{ old('language') }}">
                 </div>
                 <div class="form-group">
                     <label for="foods">Foods</label>
@@ -53,27 +57,31 @@
                 </div>
                 <div class="form-group">
                     <label for="departure_date">Departure Date</label>
-                    <input type="date" class="form-control" name="departure_date" placeholder="departure_date" value="{{ old('departure_date') }}">
+                    <input type="date" class="form-control" name="departure_date" placeholder="departure_date"
+                        value="{{ old('departure_date') }}">
                 </div>
                 <div class="form-group">
                     <label for="duration">Duration</label>
-                    <input type="text" class="form-control" name="duration" placeholder="duration" value="{{ old('duration') }}">
+                    <input type="text" class="form-control" name="duration" placeholder="1 days"
+                        value="{{ old('duration') }}">
                 </div>
                 <div class="form-group">
                     <label for="type">Type</label>
-                    <input type="text" class="form-control" name="type" placeholder="type" value="{{ old('type') }}">
+                    <input type="text" class="form-control" name="type" placeholder="Vacation"
+                        value="{{ old('type') }}">
                 </div>
                 <div class="form-group">
                     <label for="price">Price</label>
-                    <input type="number" class="form-control" name="price" placeholder="price" value="{{ old('price') }}">
+                    <input type="number" class="form-control" name="price" placeholder="Rp. "
+                        value="{{ old('price') }}">
                 </div>
                 <button type="submit" class="btn btn-primary btn-block">
                     Simpan
                 </button>
-            </form>    
-        </div>    
-    </div>    
+            </form>
+        </div>
+    </div>
 
 </div>
 <!-- /.container-fluid -->
-@endsection 
+@endsection
