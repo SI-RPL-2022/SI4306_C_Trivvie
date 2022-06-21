@@ -22,7 +22,7 @@ class DashboardController extends Controller
     public function index(Request $request)
     {
         $chart_options = [
-            'chart_title' => 'Users by months',
+            'chart_title' => 'Destinasi berdasarkan Wilayah',
             'report_type' => 'group_by_relationship',
             'model' => 'App\Models\Transaction',
             'group_by_field' => 'location',
@@ -36,7 +36,7 @@ class DashboardController extends Controller
         $chart1 = new LaravelChart($chart_options);
 
         $chart_options = [
-            'chart_title' => 'Users by names',
+            'chart_title' => 'Status Transaksi',
             'report_type' => 'group_by_string',
             'model' => 'App\Models\Transaction',
             'relationship_name' => 'travel_package',

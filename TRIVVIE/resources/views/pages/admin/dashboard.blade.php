@@ -183,9 +183,9 @@
                     <h6 class="m-0 font-weight-bold text-primary">Trivvie Admin</h6>
                 </div>
                 <div class="card-body">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto delectus earum voluptatum minima
-                        porro officiis odit dolore totam laudantium, et ullam alias ipsum repellendus incidunt officia,
-                        error debitis, ratione similique?
+                    <p>Trivvie adalah Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nisi minus
+                        quaerat quo, nihil alias earum aliquam mollitia dignissimos inventore voluptates veritatis sint
+                        laudantium, voluptate officia placeat cum repudiandae asperiores?
                     </p>
                     <p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente voluptatibus amet
                         necessitatibus est, sunt enim dolores accusamus id doloremque non illo maiores dolorem,
