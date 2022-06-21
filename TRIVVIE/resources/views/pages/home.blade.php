@@ -129,43 +129,7 @@ Trivvie
                     <div class="card card-testimonial text-center">
                     
                         <div class="testimonial-content">
-<<<<<<< HEAD
                             <h3 class="mb-4">{{ $item->username}}</h3>
-=======
-                            <img src="frontend/images/man.png" alt="" class="mb-4 rounded-circle"
-                                style="width: 150px; height: 150px;" />
-                            <h3 class="mb-4">John Doe</h3>
-                            <p class="testimonial">
-                                “ It was glorious and I could not stop to say wohooo for
-                                every single moment Dankeeeeee “
-                            </p>
-                        </div>
-                        <hr />
-                        <p class="trip-to mt-2">Trip to Ubud</p>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-6 col-lg-4">
-                    <div class="card card-testimonial text-center">
-                        <div class="testimonial-content">
-                            <img src="frontend/images/woman (1).png" alt="" class="mb-4 rounded-circle"
-                                style="width: 150px; height: 150px;" />
-                            <h3 class="mb-4">Grace anne</h3>
-                            <p class="testimonial">
-                                “ The trip was amazing and I saw something beautiful in that
-                                Island that makes me want to learn more “
-                            </p>
-                        </div>
-                        <hr />
-                        <p class="trip-to mt-2">Trip to Nusa Penida</p>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-6 col-lg-4">
-                    <div class="card card-testimonial text-center">
-                        <div class="testimonial-content mb-auto">
-                            <img src="frontend/images/woman.png" alt="" class="mb-4 rounded-circle"
-                                style="width: 150px; height: 150px;" />
-                            <h3 class="mb-4">Jane Wine</h3>
->>>>>>> aafee4abafced9ba7e710e29f35a518d2a292c7e
                             <p class="testimonial">
                                 “{{ $item->testimoni}}“
                             </p>
