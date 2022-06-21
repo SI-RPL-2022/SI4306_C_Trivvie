@@ -9,6 +9,7 @@ use App\Http\Controllers\Paket_TravelController;
 use App\Http\Controllers\DetailController;
 use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\TestimoniController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -28,6 +29,12 @@ Route::get('/paket_travel', 'Paket_TravelController@index')
 
 Route::get('/profile', 'ProfileController@index')
     ->name('profile');
+    
+Route::get('/testimoni', 'TestimoniController@create')
+    ->name('testimoni');
+    
+Route::post('/testimoni', 'TestimoniController@store')
+    ->name('testimoni');
 
 Route::get('/detail/{slug}', 'DetailController@index')
     ->name('detail');
@@ -65,6 +72,8 @@ Route::prefix('admin')
         Route::resource('travel-package', 'TravelPackageController');
         Route::resource('gallery', 'GalleryController');
         Route::resource('transaction', TransactionController::class);
+        Route::resource('testimoni', 'TestimoniController');
+        Route::resource('testimoni', TestimoniController::class);
     });
 
 Auth::routes(['verify' => true]);
