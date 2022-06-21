@@ -78,7 +78,7 @@ Trivvie
                 </div>
                 @endforeach
             </div>
-            
+
         </div>
         <!-- <div class="col-12 text-center">
                     <a href="{{route('paket_travel')}}" class="btn btn-warning">
@@ -126,6 +126,8 @@ Trivvie
                 <div class="col-sm-6 col-md-6 col-lg-4">
                     <div class="card card-testimonial text-center">
                         <div class="testimonial-content">
+                            <img src="frontend/images/man.png" alt="" class="mb-4 rounded-circle"
+                                style="width: 150px; height: 150px;" />
                             <h3 class="mb-4">John Doe</h3>
                             <p class="testimonial">
                                 “ It was glorious and I could not stop to say wohooo for
@@ -139,6 +141,8 @@ Trivvie
                 <div class="col-sm-6 col-md-6 col-lg-4">
                     <div class="card card-testimonial text-center">
                         <div class="testimonial-content">
+                            <img src="frontend/images/woman (1).png" alt="" class="mb-4 rounded-circle"
+                                style="width: 150px; height: 150px;" />
                             <h3 class="mb-4">Grace anne</h3>
                             <p class="testimonial">
                                 “ The trip was amazing and I saw something beautiful in that
@@ -152,6 +156,8 @@ Trivvie
                 <div class="col-sm-6 col-md-6 col-lg-4">
                     <div class="card card-testimonial text-center">
                         <div class="testimonial-content mb-auto">
+                            <img src="frontend/images/woman.png" alt="" class="mb-4 rounded-circle"
+                                style="width: 150px; height: 150px;" />
                             <h3 class="mb-4">Jane Wine</h3>
                             <p class="testimonial">
                                 “ I loved it when the waves was shaking harder — I was

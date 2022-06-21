@@ -2,21 +2,19 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\Request;
 use App\Models\Transaction;
 use App\Models\TransactionDetail;
 use App\Models\TravelPackage;
-
 use Carbon\Carbon;
-
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-
+use Mail;
+use App\Mail\TransactionSuccess;
 
 class CheckoutController extends Controller
 {
     public function index(Request $request, $id)
     {
-
         $item = Transaction::with(['details', 'travel_package', 'user'])->findOrFail($id);
 
         return view('pages.checkout', [
@@ -27,6 +25,7 @@ class CheckoutController extends Controller
     public function process(Request $request, $id)
     {
         $travel_package = TravelPackage::findOrFail($id);
+
         $transaction = Transaction::create([
             'travel_packages_id' => $id,
             'users_id' => Auth::user()->id,
@@ -48,7 +47,7 @@ class CheckoutController extends Controller
 
     public function remove(Request $request, $detail_id)
     {
-        $item = TransactionDetail::findOrFail($detail_id);
+        $item = TransactionDetail::findorFail($detail_id);
 
         $transaction = Transaction::with(['details', 'travel_package'])
             ->findOrFail($item->transactions_id);
@@ -69,13 +68,13 @@ class CheckoutController extends Controller
     public function create(Request $request, $id)
     {
         $request->validate([
-            'username' => 'required|string|exist:users,username',
+            'username' => 'required|string|exists:users,username',
             'is_visa' => 'required|boolean',
-            'doe_passport' => 'required'
+            'doe_passport' => 'required',
         ]);
 
         $data = $request->all();
-        $data['transaction_id'] = $id;
+        $data['transactions_id'] = $id;
 
         TransactionDetail::create($data);
 
@@ -93,12 +92,23 @@ class CheckoutController extends Controller
         return redirect()->route('checkout', $id);
     }
 
-    public function success($id)
+    public function success(Request $request, $id)
     {
-        $transaction = Transaction::findOrFail($id);
+        $transaction = Transaction::with([
+            'details', 'travel_package.galleries',
+            'user'
+        ])->findOrFail($id);
         $transaction->transaction_status = 'PENDING';
 
         $transaction->save();
+
+        //return $transaction;
+
+        Mail::to($transaction->user)->send(
+            new TransactionSuccess($transaction)
+        );
+
+
 
         return view('pages.success');
     }
