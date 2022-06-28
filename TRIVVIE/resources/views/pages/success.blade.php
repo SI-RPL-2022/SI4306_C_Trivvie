@@ -13,8 +13,8 @@
           We’ve sent you email for trip instruction <br>
           please read it as well
         </p>
-        <a href="{{ route('testimoni') }}" class="btn btn-home-page mt-3 px-5">
-          Testimoni
+        <a href="{{ route('home') }}" class="btn btn-home-page mt-3 px-5">
+          Home
         </a>
       </div>
     </div>

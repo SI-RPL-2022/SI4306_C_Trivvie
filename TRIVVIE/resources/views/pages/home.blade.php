@@ -17,9 +17,6 @@ Trivvie
         <br />
         moment you never see before
     </p>
-    <a href="#popular" class="btn btn-primary px-4 mt-4">
-        Get Started
-    </a>
 </header>
 
 <main>

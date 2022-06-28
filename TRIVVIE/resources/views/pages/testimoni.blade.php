@@ -1,4 +1,4 @@
-@extends('layouts.success')
+@extends('layouts.app')
 
 @section('title', 'Testimoni')
 
@@ -30,10 +30,22 @@
         </div>
         @endif
 
+
 	  <div class="container rounded">
             <div class="p-3 py-5">
+
+            @if (session('success'))
+                <div class="alert alert-success">
+                    {{session('success')}}
+                </div>
+            @endif
+
     <div class="card shadow">
+
         <div class="card-body">
+            
+
+
             <form action="{{ route('testimoni') }}" method="POST">
                 @csrf
                 <div class="form-group">

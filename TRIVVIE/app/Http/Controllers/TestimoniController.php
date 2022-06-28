@@ -23,6 +23,6 @@ class TestimoniController extends Controller
         $data = $request->all();
         Testimoni::create($data);
 
-        return redirect()->route('home');
+        return redirect('testimoni')->with('success','Testimoni created successfully!');
     }
 }
