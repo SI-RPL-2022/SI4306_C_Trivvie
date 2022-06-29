@@ -98,12 +98,8 @@
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" class="form-control" name="name" value="{{ Auth::user()->name }}" readonly>
-                </div>
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" class="form-control" name="password" value="{{ Auth::user()->password }}" readonly>
-                </div>
-                
+                </div>  
+                <br><br>           
             </form>
         </div>
     </div>
