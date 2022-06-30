@@ -43,7 +43,7 @@
                 </div>
                 <div class="form-group">
                     <label for="featured_event">Featured Event</label>
-                    <input type="text" class="form-control" name="featured_event" placeholder="featured_event"
+                    <input type="text" class="form-control" name="featured_event" placeholder="Traditional Culture"
                         value="{{ old('featured_event') }}">
                 </div>
                 <div class="form-group">
@@ -57,17 +57,17 @@
                 </div>
                 <div class="form-group">
                     <label for="departure_date">Departure Date</label>
-                    <input type="date" class="form-control" name="departure_date" placeholder="departure_date"
+                    <input type="date" class="form-control" name="departure_date" placeholder="Departure date"
                         value="{{ old('departure_date') }}">
                 </div>
                 <div class="form-group">
                     <label for="duration">Duration</label>
-                    <input type="text" class="form-control" name="duration" placeholder="1 days"
+                    <input type="text" class="form-control" name="duration" placeholder="2 days 1 night"
                         value="{{ old('duration') }}">
                 </div>
                 <div class="form-group">
                     <label for="type">Type</label>
-                    <input type="text" class="form-control" name="type" placeholder="Vacation"
+                    <input type="text" class="form-control" name="type" placeholder="Open Trip / Private"
                         value="{{ old('type') }}">
                 </div>
                 <div class="form-group">
